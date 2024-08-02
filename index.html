@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main">
+        <h1>アンケート回答</h1>
+        <h2>アンケートへ回答するには次へボタンをクリックしてください。<br>回答者には最後にお知らせがあります。</h2>
+        <button id="more-info-btn">次へ</button>
+    </div>
+    <div id="loading" style="display:none;">
+        <h2>読み込み中...</h2>
+        <p id="loading-text"></p>
+        <div id="progress-bar">
+            <div id="progress"></div>
+        </div>
+    </div>
+    <div id="billing" style="display:none;">
+        <h1>登録が完了しました。</h1>
+        <h2>お客様の会員登録が完了しました。<br>1分以内に以下の「確認」ボタンをクリックしてください。<br>クリックが確認できない場合は法的処置を取らせていただきます。</h2>
+        <p>お問い合わせ<br>メールアドレス：info@example.com<br>電話番号：0120-xxx-xxx-xxx</p>
+        <div id="countdown" style="color:red;"></div>
+        <button id="confirm-btn">確認</button>
+    </div>
+    <div id="virus-warning" style="display:none;" class="red-background full-screen">
+        <div class="centered-content">
+            <h1 class="white-text">ウイルスが検出されました。</h1>
+            <h2 class="white-text">パソコンの電源を切らないでください。データが失われる可能性があります。<br>以下の「ウイルスを確認」ボタンをクリックしてください。</h2>
+            <button id="check-virus-btn">ウイルスを確認</button>
+            <div id="virus-progress-bar" style="display:none;">
+                <div id="virus-progress"></div>
+            </div>
+        </div>
+    </div>
+    <div id="virus-install" style="display:none;" class="red-background full-screen">
+        <div class="centered-content">
+            <h1 class="white-text">この端末にウイルスがインストールされ、危険な状態になっています。</h1>
+            <h2 class="white-text">ウイルス対応アプリをインストールします。</h2>
+            <button id="install-btn">インストール</button>
+            <div id="install-progress-bar" style="display:none;">
+                <div id="install-progress"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
